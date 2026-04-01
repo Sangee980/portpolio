@@ -312,6 +312,39 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    html,
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 0 12px;
+    }
+
+    .navbar .container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        font-size: 0.85rem;
+        justify-content: center;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .nav-menu a {
+        padding: 0.3rem 0.4rem;
+        border-radius: 4px;
+    }
+
+    .hero {
+        padding: 70px 0;
+    }
+
     .hero h1 {
         font-size: 2rem;
     }
@@ -320,9 +353,17 @@ footer {
         font-size: 1rem;
     }
 
-    .nav-menu {
-        gap: 1rem;
-        font-size: 0.9rem;
+    .about h2,
+    .projects h2,
+    .skills h2,
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .about p,
+    .project-card p,
+    .contact p {
+        font-size: 1rem;
     }
 
     .projects-grid,
@@ -330,7 +371,54 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .project-card,
+    .skill-category {
+        padding: 1.2rem;
+    }
+
     .contact-links {
         gap: 0.5rem;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer {
+        padding: 1.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 55px 0;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .about h2,
+    .projects h2,
+    .skills h2,
+    .contact h2 {
+        font-size: 1.6rem;
+    }
+
+    .project-card h3,
+    .skill-category h3 {
+        font-size: 1.2rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-menu {
+        gap: 0.45rem;
+        font-size: 0.78rem;
     }
 }
